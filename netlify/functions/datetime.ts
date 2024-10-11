@@ -20,7 +20,7 @@ export default async function(_ : Request, context : Context) {
     type: 'json'
   })
 
-  return new Response(`<html lang="en"><head><meta charset="utf-8"/><title>C03QEJB4CFP/p1728568138652629</title></head><body><script>function dateToLocal(date){return new Date(date).toLocaleString()} const date=${Date.now()};const span=document.createElement('span');span.innerHTML='rendered at: '+new Date(date).toLocaleString()+'<br/>max-age: '+dateToLocal(date+(60*1000))+'<br/>swr: '+dateToLocal(date+(120*1000));document.body.appendChild(span);</script></body></html>`, {
+  return new Response(`<html lang="en"><head><meta charset="utf-8"/><title>C03QEJB4CFP/p1728568138652629</title></head><body><script>function dateToLocal(date){return new Date(date).toLocaleString()};const date=${Date.now()};const span=document.createElement('span');span.innerHTML='rendered at: '+new Date(date).toLocaleString()+'<br/>max-age: '+dateToLocal(date+(60*1000))+'<br/>swr: '+dateToLocal(date+(120*1000));document.body.appendChild(span);</script></body></html>`, {
     headers: {
       'content-type': 'text/html',
       'netlify-cdn-cache-control': cacheOrNot ? 'durable, max-age=60, public, stale-while-revalidate=120' : 'no-cache',
